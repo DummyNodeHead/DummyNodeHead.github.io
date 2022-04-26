@@ -1,69 +1,63 @@
-# Jekyll Cayman theme
+[Hux Blog](https://huangxuan.me)
+================================
 
-This is a [Jekyll][1] theme for [@jasonlong][2]'s [Cayman theme][4] on [GitHub Pages][3].
+> I never expect this becomes popular.
 
-Cayman is a clean, responsive theme for [GitHub Pages](https://pages.github.com). This theme is available as an option if you use the [Automatic Page Generator](https://help.github.com/articles/creating-pages-with-the-automatic-generator/) or you can copy the template and styles to use on your own.
+![](http://huangxuan.me/img/blog-desktop.jpg)
 
-You can preview the theme at https://jasonlong.github.io/cayman-theme or with real content at https://jasonlong.github.io/geo_pattern.
 
-![](https://cl.ly/image/1T3r3d18311V/content)
+[User Manual 👉](_doc/Manual.md)
+--------------------------------------------------
 
-# How to use it?
+### Getting Started
 
-Download the theme @ https://github.com/pietromenna/jekyll-cayman-theme/archive/master.zip
+1. You will need [Ruby](https://www.ruby-lang.org/en/) and [Bundler](https://bundler.io/) to use [Jekyll](https://jekyllrb.com/). Following [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/) to fullfill the enviromental requirement.
 
-Unzip it and use it as a regular jekyll folder.
+2. Installed dependencies in the `Gemfile`:
 
-```
-$ unzip jekyll-cayman-theme-master.zip
-```
-
-Get inside the newly extracted folder
-```
-$ cd jekyll-cayman-theme-master
+```sh
+$ bundle install 
 ```
 
-Get the required gems
-```
-$ bundle install
-```
+3. Serve the website (`localhost:4000` by default):
 
-Use it!
-
-```
-$ jekyll serve
+```sh
+$ bundle exec jekyll serve  # alternatively, npm start
 ```
 
-For more details read about [Jekyll][1] on its web page.
+### Development (Build From Source)
 
-# Setup
+To modify the theme, you will need [Grunt](https://gruntjs.com/). There are numbers of tasks you can find in the `Gruntfile.js`, includes minifing JavaScript, compiling `.less` to `.css`, adding banners to keep the Apache 2.0 license intact, watching for changes, etc. 
 
-Some important configuration can be done in the file `_config.yml`. Please, check the Setup section in that file.
+Yes, they were inherited and are extremely old-fashioned. There is no modularization and transpilation, etc.
+
+Critical Jekyll-related code are located in `_include/` and `_layouts/`. Most of them are [Liquid](https://github.com/Shopify/liquid/wiki) templates.
+
+This theme uses the default code syntax highlighter of jekyll, [Rouge](http://rouge.jneen.net/), which is compatible with Pygments theme so just pick any pygments theme css (e.g. from [here](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html) and replace the content of `highlight.less`.
 
 
-## baseurl
+### Interesting to know more? Checkout the [full user manual](_doc/Manual.md)!
 
-`baseurl` parameter is required in the case the site doesn't sit on the root of the domain. For example: https://pietromenna.github.io/jekyll-cayman-theme
 
-In the case above the baseurl should be set to "/jekyll-cayman-theme".
+Other Resources
+---------------
 
-In the case the site sits in the root, you can leave `baseurl` as empty "".
+Ports
+- [**Hexo**](https://github.com/Kaijun/hexo-theme-huxblog) by @kaijun
+- [**React-SSR**](https://github.com/LucasIcarus/huxpro.github.io/tree/ssr) by @LucasIcarus
 
-# Contributing
+[Starter/Boilerplate](https://github.com/huxpro/huxblog-boilerplate)
+- Out of date. Helps wanted for updating it on par with the main repo
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/pietromenna/jekyll-cayman-theme.
+Translation
+- [🇨🇳  中文文档（有点过时）](https://github.com/Huxpro/huxpro.github.io/blob/master/_doc/README.zh.md)
 
-# Development
 
-To set up your environment to develop this theme, run `bundle install`.
+License
+-------
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+Apache License 2.0.
+Copyright (c) 2015-present Huxpro
 
-# License
-
-This work is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license.
-
-[1]: https://jekyllrb.com/
-[2]: https://github.com/jasonlong
-[3]: https://pages.github.com/
-[4]: https://github.com/jasonlong/cayman-theme
+Hux Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
+Copyright (c) 2013-2016 Blackrock Digital LLC.

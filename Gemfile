@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-gemspec
-
-gem 'jekyll'
 gem 'jekyll-paginate'
-gem 'kramdown'
-gem 'pygments.rb'
+
+gem "jekyll", "~> 4.0"
+gem "rake"
+
+gem "webrick", "~> 1.7"
