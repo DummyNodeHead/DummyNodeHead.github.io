@@ -78,7 +78,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "ZCY，前端小子，刚刚踏入AI安全攻防的新手村。"
+sidebar-about-description: "ZJU大三SE，刚刚踏入AI安全攻防新手村，有时写写前端"
 sidebar-avatar: https://github.com/DummyNodeHead.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
